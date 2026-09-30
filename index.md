@@ -2,8 +2,8 @@
 layout: page
 navbar: false
 sidebar: false
-aside: false
-footer: false
+aside: true
+footer: true
 pageClass: home-landing
 title: EasyWaterscape
 description: Realtime Ocean & Water System for Unreal Engine 5
@@ -15,7 +15,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 <section class="section section-dark section-full section-top">
     <div class="landing">
         <h2>EasyWaterscape</h2>
-        <p class="landing-description">FFT ocean for Unreal Engine 5</p>
+        <p class="landing-description">Realtime Ocean & Water System for Unreal Engine 5</p>
         <div class="buttons">
             <a href="#" onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' })">Discover</a>
             <a href="Getting started/">Documentation</a>
