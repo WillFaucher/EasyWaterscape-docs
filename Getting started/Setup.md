@@ -10,7 +10,6 @@ order: 20
 - Click on "Add to Project"
 - You will find the EasyWaterscape folder in your project's content browser.
 
-- Attempt 2
 ## 2. Using EasyWaterscape
 
 - For starters, refer to the provided Demo/Example levels found in the "Content/EasyWaterscape/Levels-Examples" folder.

@@ -6,7 +6,7 @@ aside: false
 footer: false
 pageClass: home-landing
 title: EasyWaterscape
-description: FFT ocean for Unreal Engine 5
+description: Realtime Ocean & Water System for Unreal Engine 5
 ---
 
 <!-- TODO: replace the placeholder boxes with your media, e.g.
@@ -36,7 +36,7 @@ description: FFT ocean for Unreal Engine 5
 <section class="section section-content">
     <div class="side-by-side">
         <div class="media-placeholder">Video: open ocean</div>
-        <p>FFT ocean simulation running on the GPU.</p>
+        <p>Water simulation running on the GPU.</p>
     </div>
     <div class="side-by-side side-reverse">
         <div class="media-placeholder">Video: coastline</div>
