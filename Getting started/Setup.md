@@ -6,5 +6,5 @@ order: 20
 
 ## 1. Enable plugin
 
-- Hello World doing a testy big test
+- Working from github
 
