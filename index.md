@@ -2,7 +2,7 @@
 layout: page
 navbar: false
 sidebar: false
-aside: true
+aside: false
 footer: true
 pageClass: home-landing
 title: EasyWaterscape
