@@ -2,7 +2,7 @@
 order: 20
 ---
 
-# Setup
+# Installation & Setup
 
 ## 1. Add EasyWaterscape To Your Project
 
