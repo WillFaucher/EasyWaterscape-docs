@@ -22,7 +22,7 @@ order: 4
   - Mesh Density: Medium
 - Test B: Same level, EasyWaterscape replaced with a large, reflective plane + basic material with roughness 0. The benchmark needs something to reflect in order to be a fair comparison, as reflections have a cost. It would not be an apples to apples comparison to test EasyWaterscape vs. an empty scene.
 
-Ran the benchmark for 20 seconds, 5 times. Measured the average ms, then subtracted the difference between test A and B.
+Ran both tests for 20 seconds, 5 times. Measured the average ms, then subtracted the difference between test A and B.
 
 - Example:
   - Test A measured an average of 4.30ms on RTX 5090 @1440p
