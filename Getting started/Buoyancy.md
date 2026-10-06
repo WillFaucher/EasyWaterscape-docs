@@ -2,7 +2,7 @@
 order: 20
 ---
 
-#Buoyancy
+# Buoyancy
 
 ## 1. Add EasyWaterscape To Your Project
 
