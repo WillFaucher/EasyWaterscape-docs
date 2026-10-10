@@ -58,6 +58,16 @@ To prevent coast waves from appearing around a specific static mesh:
 2. In the Details panel, search for **scene capture**.
 3. Enable **Hidden in Scene Capture**.
 
+However, some games or projects need those actors to be visible in Scene Capture. So as of the October 2026 update, we can now exclude actors (and PCG) from the CoastMaker capture using a single tag: EWS_HideFromCoastMaker
+
+1. Select the actor you want to hide from CoastMaker (Static Mesh, PCG, Skeletal Mesh, whatever)
+2. Under search “Tag” in the details panel
+3. Click the + to add a new tag (Shown below)
+4. enter “EWS_HideFromCoastMaker”
+5. Click CoastMaker again to recapture.
+6. Your actor will now no longer be visible in CoastMaker.
+
+
 ### Advanced settings
 
 The **Advanced** tab should generally be left alone. One useful exception: in very tight areas, incoming waves can look bad. The Advanced settings blur the generated maps to smooth this out. Increase them a fair amount, then click **CoastMaker** again to 
