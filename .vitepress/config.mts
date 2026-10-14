@@ -70,9 +70,8 @@ const sidebarOptions = {
 export default defineConfig(
   withSidebar(
     {
-      // Must match the GitHub repo name (site lives at <user>.github.io/EasyWaterscape-docs/).
-      // Delete this line if you move the site to your own domain.
-      base: "/EasyWaterscape-docs/",
+      // Site lives at the root of easywaterscape.williamfaucher.com.
+      base: "/",
       title: "EasyWaterscape",
       description: "EasyWaterscape Documentation - FFT ocean for Unreal Engine 5",
       head: [

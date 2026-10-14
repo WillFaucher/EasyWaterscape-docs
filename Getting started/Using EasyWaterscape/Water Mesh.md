@@ -5,26 +5,23 @@ order: 20
 
 ## Mesh Mode
 
-As of October 2026, EasyWaterscape has a new mesh generation system for both better performance *and* improved visuals. 
+As of October 2026, some major changes have been made to the way EasyWaterscape handles the water surface mesh. Custom and Disc(Legacy) are the options that were available when EasyWaterscape launched, if you prefer to use those.
 
 You’ll find the Mesh Mode dropdown menu in the details panel. You have three modes to choose from:
 ![Mesh Mode dropdown with its three options](/EasyWaterscape_Docs_MeshModeOptions.png)
 
 ### Clipmap
 
-Clipmap spawns a mesh around the center, you can adjust its triangle density (for very fine detail) and how far from the camera the mesh remains dense until it begins to tessellate and fade away. It allows granular control over the exact triangle density you want, or can afford, for a given project.
+The new feature in the October 2026 Update, and the new default. Clipmap spawns a mesh that is densest nearest the camera, and quickly optimizes the mesh the further away it is, you can adjust its triangle density (for very fine detail) and how far from the camera the mesh remains dense until it begins to tessellate and fade away. It allows granular control over the exact triangle density you want, or can afford, for a given project.
+
+[/EasyWaterscape_Docs_WireframeMode_07.png|/EasyWaterscape_Docs_WireframeMode_06.png|Low Density|Medium+ Density]
+
 <div class="img-row">
   <figure>
-    <img src="/EasyWaterscape_Docs_WireframeMode_04.png" alt="The Material Function in EasyWaterscape's Detail Panel">
-    <figcaption>Medium density</figcaption>
-  </figure>
-  <figure>
-    <img src="/EasyWaterscape_Docs_WireframeMode_05.png" alt="Change the Shading Model Here">
-    <figcaption>Low Density</figcaption>
+    <img src="/EasyWaterscape_Docs_WireframeMode_08.png" alt="An exaggerated demonstration of the water being denser nearest the camera">
+    <figcaption>An exaggerated demonstration of the water being denser nearest the camera</figcaption>
   </figure>
 </div>
-
-[/EasyWaterscape_Docs_WireframeMode_04.png|/EasyWaterscape_Docs_WireframeMode_05.png|Medium Density|Low Density]
 
 Main benefits of the clipmap approach is proper TSR support, resulting in far less smearing when running Unreal at lower screen percentages. Gives you a much cleaner result. It also has a much lower memory footprint than the legacy option.
 
@@ -59,6 +56,13 @@ Custom allows you to choose your own custom mesh, mostly used for pools or small
 
 When using a Custom mesh, it is recommended that you disable nanite on this specific mesh. World Position Offset does not work very well with Nanite meshes at the moment.
 
+<div class="img-row">
+  <figure>
+    <img src="/EasyWaterscape_Docs_CustomMesh.png" alt="CustomMeshExample">
+    <figcaption>Custom Mesh can be helpful for getting small, odd-shaped bodies of water, if necessary.</figcaption>
+  </figure>
+</div>
+
 ### Disc (Legacy)
 
 The original mesh system EasyWaterscape had when it launched. This is here for legacy purposes. If your project works better with this mode, then you always have the option to revert to this earlier method. There are some 
@@ -85,7 +89,7 @@ This is the only setting that adds detail in the distance further from camera.
 
 EasyWaterscape offers three different kind of mesh centering options. The first being its default setting ‘camera follow’.  This does as the name implies, the center of your mesh (‘Clipmap’, and ‘Disc (Legacy)’ only) follows the camera, the detail will always be highest near the camera, and the water extends forever towards the horizon, ideal for very large bodies of water. 
 
-### Focus Actor
+### Center Actor
 
 Sometimes, especially for Cinematics purposes, you don’t want the highest detail to be closest to the camera. Sometimes you may want the high level of detail to be around a specific actor. With Focus Actor selected, you can use the eyedropper tool to select an actor in your level. The center of the mesh (where the highest detail is) will then be centered around your targeted actor. 
 

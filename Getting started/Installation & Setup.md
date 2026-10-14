@@ -16,5 +16,6 @@ In **Unreal Engine 5.8**, when you add EasyWaterscape to your level, you might e
 ![Project Settings Popup](/EasyWaterscape_Docs_AssetGuidelines_01.png)
 
 This is only necessary to enable ***IF*** and ***ONLY IF*** you need to use the legacy [Disc Mesh](<Using EasyWaterscape/Water Mesh.md#mesh-mode>) approach.
+If you plan on sticking with the new defaults, you don't need to change this.
 
 Changing that project setting can affect how other water systems look. So it’s more of a last resort kind of thing.
