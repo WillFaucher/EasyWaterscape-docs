@@ -38,7 +38,7 @@ If you're still experiencing smearing, there's two usual suspects here.
 
 If you missed it, you can manually set the following project setting: 
 ![Project Settings Popup](/EasyWaterscape_Docs_ProjectSetting.png)
-This is only necessary to enable ***IF*** and ***ONLY IF*** you need to use the legacy [Disc Mesh](<Using EasyWaterscape/Water Mesh.md#mesh-mode>) approach.
+This is only necessary to enable ***IF*** and ***ONLY IF*** you need to use the legacy [Disc Mesh](<../Getting started/Using EasyWaterscape/Water Mesh.md#disc-legacy>) approach.
 If you plan on sticking with the new defaults, you don't need to change this.
 ## Black Patches on Water Surface
 
