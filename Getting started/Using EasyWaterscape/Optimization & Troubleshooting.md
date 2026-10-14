@@ -49,9 +49,10 @@ Because Unreal Engine needs to account for different projects for different plat
 To account for this, EasyWaterscape includes a couple of controls to help deal with the pros and cons of each lighting/reflection choices you make in your project.
 
 ### Lumen Fix Offset
-When using Lumen, if "Use Screen Traces" in the Post Process Volume, (and [Evaluate in Ray Tracing](<#evaluate-in-ray-tracing>)) are disabled, you can experience dark patchy issues on the water surface. (See example below) Increasing this value will help offset the traced surface to fix those dark patches.
 
-[/EasyWaterscape_Docs_LumenFixOffset_01.png|/EasyWaterscape_Docs_LumenFixOffset_02.png|Lumen Fix Offset 0|Lumen Fix Offset 50]
+When using Lumen, if "Use Screen Traces" in the Post Process Volume, (and [Evaluate in Ray Tracing](<#evaluate-in-ray-tracing>)) are both disabled, you can experience dark patchy issues on the water surface. (See example below) Increasing this value will help offset the traced surface to fix those dark patches. Solution to that is also covered in [Common Issues](<../../Knowledgebase/Common Issues.md>)
+
+[/EasyWaterscape_Docs_BlackPatches.png|/EasyWaterscape_Docs_NoBlackPatches.png|Lumen Fix Offset 0|Lumen Fix Offset 50]
 
 When using [Clipmap](<Water Mesh.md#clipmap>), if you notice the following kind of screenspace reflection issues below (Notice the artifacts around the edge of the frame), you'll need to increase the Lumen Fix Offset high enough until you don't see it anymore. By default, Lumen Fix Offset is set to 50, which is often just enough. But if your waves are very large and you still see this, Lumen Fix Offset is the solution.
 
@@ -60,13 +61,14 @@ When using [Clipmap](<Water Mesh.md#clipmap>), if you notice the following kind 
 This issue also goes away if [Evaluate in Ray Tracing](<#evaluate-in-ray-tracing>) is set to true. Which might seem like a perfect solution, but it has one caveat.
 
 ### Evaluate in Ray Tracing
-When using [Clipmap](<Water Mesh.md#clipmap>), and Lumen Reflections:
-By default, this is enabled. This gives the best possible surface near the horizon, prevents screen-space reflection issues along the screen edges. However, with this ticked on, the water does not contribute to the lumen scene, and does  not contribute to Global Illumination(GI). Meaning shadowing around the edges of cliffs can look a bit brighter than they should if there is no geometry below the surface to block skylight.
+The following only applies when using [Clipmap](<Water Mesh.md#clipmap>), and Lumen Reflections:
 
-With Evaluate in Raytracing turned OFF, the water surface does contribute to GI, but then you'll encounter some screenspace reflection issues along the edges of the frame as such (see example A).
+By default, Evaluate in Ray Tracing is enabled. This gives the best possible surface near the horizon, prevents screen-space reflection issues along the screen edges. However, with this ticked on, the water does not contribute to the lumen scene, as a result, it does not contribute to Global Illumination(GI). Meaning shadowing around the edges of cliffs can look a bit brighter than they should if there is no geometry below the surface to block skylight.
+
+With Evaluate in Raytracing turned OFF, the water surface does contribute to GI, but then you'll encounter some screenspace reflection issues along the edges of the frame as such (see above).
 This can be mitigated by increasing the [Lumen Fix Offset](<#lumen-fix-offset>) to, say, 50, which will solve the screenspace reflections edge issue, but, your horizon may also start showing some extra noise. (See Example below).
 
-We recommend leaving Evaluate in Ray Tracing enabled, and placing geometry below the water surface so that cliffs, and surrounding environments get correct GI.
+>**Recommendation:** leave Evaluate in Ray Tracing enabled, and place geometry below the water surface so that cliffs, and surrounding environments get correct GI/AO shadowing.
 
 If you are simply using screenspace reflections and not Lumen Reflections, then you need not worry about any of the above.
 
