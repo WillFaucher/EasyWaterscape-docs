@@ -1,13 +1,13 @@
 ---
 order: 10
 ---
-
 # Changelog / Patch Notes
 
 ## 2026-10-15
+
 #### Major Performance improvements
-- Reduced per-frame cost of EasyWaterscape by 67%, roughly a 200% performance increase. See the new 
-- Optimized render target usage: 50% reduction in draw calls. Render Target Memory usage dropped by 75%.
+- Reduced per-frame cost of EasyWaterscape by about 67%, roughly a 200% performance increase.
+- Optimized render target usage: Render Target Memory usage dropped by 75%. Foam uses 50% fewer draw calls.
 >     For reference, on an RTX5090 @1440p, EasyWaterscape ran at 1.62ms.
 >     With this new update: 0.54ms
 >    - See the [Benchmarks](</Knowledgebase/Benchmarks.md>) section for more details
@@ -33,14 +33,6 @@ New toggle: [Mesh Mode](</Getting started/Using EasyWaterscape/Water Mesh.md#mes
 Several BP_EasyWaterscape actors can now share one wave simulation, ideal for several
 lakes in Lake Mode. Untick "Simulate Waves" on every body except one: the others reuse the main body' waves, foam and coast data at no extra simulation cost, while keeping their own material look.
 
-#### General Fixes
-- General node graph hygiene
-- Fixed a bug causing a 1-frame delay on the foam, which led to foam showing up just barely behind the wave crests, rather than correctly in-place.
-- Fixed an issue where foam lingered whenever Water Framerate exceeded the runtime fps; now real game time.
-- Fixed stuttering when adjusting sliders. Now smooth.
-- Mesh Center Focus by actor
-- Made LOD0 a bit less ridiculous. Same  mesh density near the camera, optimized near the outer rim.
-
 #### Buoyancy
 
 - **Buoyancy Resolution Fix**
@@ -57,6 +49,14 @@ lakes in Lake Mode. Untick "Simulate Waves" on every body except one: the others
 - You can now use a tag to exclude large sets of assets, PCG systems, etc, from being picked up by CoastMaker. 
   
   Add this tag to hide objects from CoastMaker: **EWS_HideFromCoastMaker**. More details [here](</Getting started/Using EasyWaterscape/CoastMaker.md#excluding-meshes>)
+
+#### General Fixes
+- General node graph hygiene
+- Fixed a bug causing a 1-frame delay on the foam, which led to foam showing up just barely behind the wave crests, rather than correctly in-place.
+- Fixed an issue where foam lingered whenever Water Framerate exceeded the runtime fps; now real game time.
+- Fixed stuttering when adjusting sliders. Now smooth.
+- Mesh Center Focus by actor
+- Made LOD0 a bit less ridiculous. Same  mesh density near the camera, optimized near the outer rim.
 
 ## 2026-09-10
 - Users no longer need to click “Stop EasyWater” before using PIE/Play mode in editor, or before rendering with MovieRenderQueue/Graph.

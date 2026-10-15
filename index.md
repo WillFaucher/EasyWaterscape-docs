@@ -33,15 +33,15 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 
 <section class="section section-content">
     <div class="side-by-side">
-        <div class="media-placeholder">Video: open ocean</div>
-        <p>Realtime water simulation running in UE5.</p>
+        <video src="/EasyWaterscape_Homepage_OpenOcean.mp4" autoplay loop muted playsinline></video>
+        <p>Realtime water simulation running in Unreal Envine 5.</p>
     </div>
     <div class="side-by-side side-reverse">
-        <div class="media-placeholder">Video: coastline</div>
-        <p>Shorelines with baked coast data.</p>
+        <video src="/EasyWaterscape_Homepage_Coastline.mp4" autoplay loop muted playsinline></video>
+        <p>Includes CoastMaker: Shoreline system with baked coast data.</p>
     </div>
     <div class="side-by-side">
-        <div class="media-placeholder">Video: buoyancy</div>
+        <video src="/EasyWaterscape_Homepage_Buoyancy.mp4" autoplay loop muted playsinline></video>
         <p>Buoyancy for floating objects.</p>
     </div>
     <div class="side-by-side side-reverse">
