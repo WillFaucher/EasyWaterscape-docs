@@ -115,6 +115,14 @@ export default defineConfig(
             content: "summary_large_image",
           },
         ],
+                [
+          "script",
+          {
+            defer: "",
+            src: "https://static.cloudflareinsights.com/beacon.min.js",
+            "data-cf-beacon": '{"token": "a994ee135e1b47c1b4c28267309a7542"}',
+          },
+        ],  
       ],
       appearance: "force-dark",
       markdown: {

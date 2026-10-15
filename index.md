@@ -34,7 +34,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 <section class="section section-content">
     <div class="side-by-side">
         <video src="/EasyWaterscape_Homepage_OpenOcean.mp4" autoplay loop muted playsinline></video>
-        <p>Realtime water simulation running in Unreal Envine 5.</p>
+        <p>Realtime water simulation running in Unreal Engine 5.</p>
     </div>
     <div class="side-by-side side-reverse">
         <video src="/EasyWaterscape_Homepage_Coastline.mp4" autoplay loop muted playsinline></video>
