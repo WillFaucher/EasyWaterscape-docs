@@ -91,7 +91,23 @@ export default defineConfig(
             content: "EasyWaterscape Documentation",
           },
         ],
-        // TODO: add og:image / twitter:image once the site has a URL and a banner image
+                [
+          "meta",
+          {
+            property: "og:image",
+            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_03.jpg",
+          },
+        ],
+        ["meta", { property: "og:image:width", content: "1920" }],
+        ["meta", { property: "og:image:height", content: "1080" }],
+        ["meta", { property: "og:image:alt", content: "EasyWaterscape logo over a foggy sea with a buoy and sea stacks" }],
+        [
+          "meta",
+          {
+            name: "twitter:image",
+            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_03.jpg",
+          },
+        ],
         [
           "meta",
           {
