@@ -56,7 +56,7 @@ lakes in Lake Mode. Untick "Simulate Waves" on every body except one: the others
 
 - You can now use a tag to exclude large sets of assets, PCG systems, etc, from being picked up by CoastMaker. 
   
-  Add this tag to hide objects from CoastMaker: **EWS_HideFromCoastMaker**. More details [here](</Getting started/Using EasyWaterscape/Coastmaker.md#excluding-meshes>)
+  Add this tag to hide objects from CoastMaker: **EWS_HideFromCoastMaker**. More details [here](</Getting started/Using EasyWaterscape/CoastMaker.md#excluding-meshes>)
 
 ## 2026-09-10
 - Users no longer need to click “Stop EasyWater” before using PIE/Play mode in editor, or before rendering with MovieRenderQueue/Graph.
