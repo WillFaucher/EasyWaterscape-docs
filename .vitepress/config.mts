@@ -75,8 +75,8 @@ export default defineConfig(
       title: "EasyWaterscape",
       description: "EasyWaterscape Documentation - Realtime Ocean & Water System for Unreal Engine 5",
       head: [
-        // TODO: add public/favicon.ico, then uncomment
-        // ["link", { rel: "icon", href: "/favicon.ico" }],
+        ["link", { rel: "icon", href: "/favicon.ico" }],
+        ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
         [
           "meta",
           {

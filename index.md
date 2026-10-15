@@ -45,8 +45,8 @@ description: Realtime Ocean & Water System for Unreal Engine 5
         <p>Buoyancy for floating objects.</p>
     </div>
     <div class="side-by-side side-reverse">
-        <div class="media-placeholder">Video: underwater</div>
-        <p>Underwater post-process and water surface split (BETA).</p>
+        <video src="/EasyWaterscape_Homepage_Underwater.mp4" autoplay loop muted playsinline></video>
+        <p>BETA: Underwater post-process and water surface split</p>
     </div>
 </section>
 
