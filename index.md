@@ -34,7 +34,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 <section class="section section-content">
     <div class="side-by-side">
         <div class="media-placeholder">Video: open ocean</div>
-        <p>Water simulation running in Realtime in UE5.</p>
+        <p>Realtime water simulation running in UE5.</p>
     </div>
     <div class="side-by-side side-reverse">
         <div class="media-placeholder">Video: coastline</div>
@@ -46,7 +46,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
     </div>
     <div class="side-by-side side-reverse">
         <div class="media-placeholder">Video: underwater</div>
-        <p>Underwater post-process and water surface meniscus line.</p>
+        <p>Underwater post-process and water surface split (BETA).</p>
     </div>
 </section>
 

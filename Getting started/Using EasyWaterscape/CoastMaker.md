@@ -30,11 +30,11 @@ CoastMaker runs automatically **once** at runtime, so there is no ongoing perfor
 
 ## Coast Foam
 
-**Foam → Coast** has the same settings as Open Ocean foam (Intensity, Threshold, Decay, etc.). It works especially well for rocky coasts.
+**Foam > Coast** has the same settings as Open Ocean foam (Intensity, Threshold, Decay, etc.). It works especially well for rocky coasts.
 
 ## Coastline Waves
 
-In the **CoastMaker → Coastline** section, you control the shoreline waves themselves: intensity, amount, speed, breaking foam, and more.
+In the **CoastMaker > Coastline** section, you control the shoreline waves themselves: intensity, amount, speed, breaking foam, and more.
 
 ## Adjusting for Capture Size and Resolution
 

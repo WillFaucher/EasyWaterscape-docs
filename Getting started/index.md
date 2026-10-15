@@ -4,8 +4,8 @@
 > I focused on documenting the new features implemented in the October 2026 update, I needed to prioritize documentation for features which are not currently in the existing tutorial video. The rest will be added as soon as possible.
 >
 > 
-> If what you're looking for is not in these docs (yet), the information you need is in the tutorial here!
->
+> 
+> If at any point you have any questions whatsoever, do join the [Discord Server](https://discord.com/invite/PjY9wEq9wG) for help, or check out the tutorial!
 >
 > Thanks for bearing with me.
 >

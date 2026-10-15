@@ -11,6 +11,13 @@ order: 10
 - Open the Unreal Engine project you have added EasyWaterscape to.
 - You will find the EasyWaterscape folder in your project's content browser.
 
+> [!TIP] Example Demo Levels
+> EasyWaterscape includes several Example Levels to help you get started.  
+> In the Content Browser, in the EasyWaterscape folder, you'll find "Levels-Examples". Each Level is named accordingly to the feature you want to learn more about: CoastMaker, Buoyancy, etc.
+> <br>
+> <br>
+> ![Project Settings Popup](/EasyWaterscape_Docs_ExampleLevels.png)
+
 In **Unreal Engine 5.8**, when you add EasyWaterscape to your level, you might encounter the following pop up:  
 
 ![Project Settings Popup](/EasyWaterscape_Docs_AssetGuidelines_01.png)

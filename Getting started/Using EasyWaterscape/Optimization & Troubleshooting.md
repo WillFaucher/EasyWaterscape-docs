@@ -72,10 +72,12 @@ The reason we went this direction is because we noticed the following, notice th
 
 [/EasyWaterscapeDocs_FineNoise2.png|/EasyWaterscapeDocs_FineNoise1.png|Without the fix| With the fix]
 
->**Above:** Left: Evaluate in Ray Tracing disabled (contributes to Lumen scene, which is better, and lumen fix offset set to 50) E
+>**Above:** Left: Evaluate in Ray Tracing disabled (contributes to Lumen scene, which is better, and lumen fix offset set to 50). But it adds subtle noise. The Right side is cleaner.
 
 >**Recommendation:** leave Evaluate in Ray Tracing enabled, and place geometry below the water surface so that cliffs, and surrounding environments get correct GI/AO shadowing.
-
+>
+> <br/>
+> This is a classic case of picking your battles and choosing what works best for you.
 If you are simply using screenspace reflections and not Lumen Reflections, then you need not worry about any of the above.
 
 See the [Common Issues](<../../Knowledgebase/Common Issues.md>) section for more information on dealing with artifacts and other known, easy-to-fix issues.
