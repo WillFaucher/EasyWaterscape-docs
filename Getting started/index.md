@@ -1,13 +1,16 @@
 # Getting Started
 > [!WARNING] IMPORTANT
-> This documentation site is an active work in progress. The focus for now is on the new features implemented in the October 2026 update, which covers things that are not currently in the existing tutorial video. This will be fleshed out as soon as possible.
-> <br>
-> <br>
-> For everything else that is not currently in these docs, please refer to the tutorial video here!
-> <br>
-> <br> Thanks for bearing with me.
-> <br>
-> <br>
+> This documentation site is an active work in progress. 
+> I focused on documenting the new features implemented in the October 2026 update, I needed to prioritize documentation for features which are not currently in the existing tutorial video. The rest will be added as soon as possible.
+>
+> 
+> If what you're looking for is not in these docs (yet), the information you need is in the tutorial here!
+>
+>
+> Thanks for bearing with me.
+>
+> 
+> 
 > 
 > <a href="https://www.youtube.com/watch?v=dXuwb4PpodQ" target="_blank" class="fabLink">Watch Tutorial</a>
 

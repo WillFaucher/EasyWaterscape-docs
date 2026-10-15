@@ -73,7 +73,7 @@ export default defineConfig(
       // Site lives at the root of easywaterscape.williamfaucher.com.
       base: "/",
       title: "EasyWaterscape",
-      description: "EasyWaterscape Documentation - FFT ocean for Unreal Engine 5",
+      description: "EasyWaterscape Documentation - Realtime Ocean & Water System for Unreal Engine 5",
       head: [
         // TODO: add public/favicon.ico, then uncomment
         // ["link", { rel: "icon", href: "/favicon.ico" }],
@@ -81,14 +81,14 @@ export default defineConfig(
           "meta",
           {
             property: "og:title",
-            content: "EasyWaterscape - FFT ocean for Unreal Engine 5",
+            content: "EasyWaterscape - Realtime Ocean & Water System for Unreal Engine 5",
           },
         ],
         [
           "meta",
           {
             property: "og:description",
-            content: "EasyWaterscape documentation",
+            content: "EasyWaterscape Documentation",
           },
         ],
         // TODO: add og:image / twitter:image once the site has a URL and a banner image

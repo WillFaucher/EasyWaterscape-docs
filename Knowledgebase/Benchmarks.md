@@ -1,20 +1,21 @@
 ---
 order: 4
 ---
-
 # Benchmark Results
-| GPU | Resolution | GPU Cost (ms)*|
+| GPU | Resolution | GPU Cost (ms)**|
 |---|---|---|
 |RTX 5090 | **1080p** | 0.51ms |
 |RTX 5090 | **1440p** | 0.54ms |
 |RTX 3080TI | **1080p** | 1.22ms |
 |RTX 3080TI | **1440p** | 1.41ms |
 
-><small>*Lower is better</small>
+><small>*Results as of the October 2026 Update</small>
+
+><small>**Lower is better</small>
 
 ## Benchmark Test Conditions
 - Level: Basic exterior lighting setup (Sky Atmosphere, Directional Light, Skylight)
-- Test A: Running EasyWaterscape @Mid settings:
+- Test A: Running EasyWaterscape @Mid settings*:
   - Water Resolution: 512
   - Water Framerate 30
   - Mesh Density: Medium
@@ -29,3 +30,5 @@ Ran both tests for 20 seconds, 5 times. Measured the average frame time (ms), th
   - 4.30 - 3.76 = 0.54ms
 
 Benchmark level will soon be available to all via Playable Demo.
+
+><small>*Mid quality settings was chosen so that there is some leeway for additional optimization on lower-spec systems</small>

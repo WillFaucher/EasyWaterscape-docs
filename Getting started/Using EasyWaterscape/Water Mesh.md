@@ -25,15 +25,16 @@ The new feature in the October 2026 Update, and the new default. Clipmap spawns 
 
 Main benefits of the clipmap approach is proper TSR support, resulting in far less smearing when running Unreal at lower screen percentages. Gives you a much cleaner result. It also has a much lower memory footprint than the legacy option.
 
-The following variables in EasyWaterscape’s detail panel ONLY affect Clipmap. These will have no effect on Custom or Disc(Legacy) mode:
+The following variables in EasyWaterscape’s detail panel ONLY affect Clipmap. These will have no effect on [Custom](#custom) or [Disc(Legacy)](#disc-legacy) Mesh Modes:
 
-- **Mesh Scale**
+![Clipmap Variables](/EasyWaterscape_Docs_ClipmapVariables.png)
+- [Mesh Scale](#mesh-scale)
 
-- **Extend Detail Range**
+- [Mesh Outer Rings](#mesh-outer-rings)
 
-- **Mesh Ring Count**
+- [Morph Blend Range](#morph-blend-range)
 
-- **Morph Blend Range**
+- [Extend Detail Area](#extend-detail-area)
 
 > [!WARNING]
 > In **Unreal Engine 5.7**, when you change the viewport mode to Wireframe, you can see everything as intended. Water displaces the wireframe, you can see the tessellation, it looks gorgeous.
@@ -80,8 +81,9 @@ Changing that project setting can affect how other water systems look. So it’s
 How many triangles each water tile has. Change viewmode to Wireframe to see the effect.
 
 Higher gives sharper wave shapes and crests, both up close and far away. Each step up costs 4 times the triangles.
-
 This is the only setting that adds detail in the distance further from camera.
+
+![Project Settings Popup](/EasyWaterscapeDocs_MeshDensity.png)
 
 ## Mesh Center
 
@@ -91,32 +93,56 @@ EasyWaterscape offers three different kind of mesh centering options. The first 
 
 ### Center Actor
 
-Sometimes, especially for Cinematics purposes, you don’t want the highest detail to be closest to the camera. Sometimes you may want the high level of detail to be around a specific actor. With Focus Actor selected, you can use the eyedropper tool to select an actor in your level. The center of the mesh (where the highest detail is) will then be centered around your targeted actor. 
+Sometimes, especially for Cinematics purposes, you don’t want the highest detail to be closest to the camera. Sometimes you may want the high level of detail to be around a specific actor. With Center Actor selected, you can use the eyedropper tool to select an actor in your level. The center of the mesh (where the highest detail is) will then be centered around your targeted actor. Switch to wireframe mode to confirm. You will see the densest part of the mesh will be located around this selected actor
 
-If this selected actor is a Cine Camera Actor, its functionality changes to something pretty cool.
+> [!TIP]
+> Look at the "L_Example_CenterActor" example level to try out this feature with everything set up.
+
+#### Cine Camera Actor
+If this selected actor is a [Cine Camera Actor](#cine-camera-actor), (the one you add in Sequencer) its functionality changes to something pretty cool.
 The mesh center will be where the CineCameraActors focus point is. This means the water will always have its densest triangle count wherever the camera is focused at, this is especially helpful when shooting at longer focal lengths.
 
 When using the CineCameraActors in Sequencer, simply using the eyedropper tool to select the CineCameraActor won’t work, everytime you save your level, the camera will get de-selected from the Focus Actor list, this is due to the way **spawnable** actors in sequencer behave. 
 
 There is a specific order of operations for correctly attach the spawnable CineCameraActor from sequencer:
-1. Add EasyWaterscape to the sequencer by drag and dropping it from the Level Outliner, into your sequence:
 
-1. In the track list, right click, and add 
-2. Now you can add the CineCameraActor spawned by your Sequence.
-3. Test it out! Change the Focus Distance variable, and you’ll see the mesh center move along with it.
+1. **Add EasyWaterscape to the sequencer by drag and dropping it from the Level Outliner, into your sequence:**
+
+>![Project Settings Popup](/EasyWaterscape_Docs_CenterActorWorkflow_01.png)
+
+2. **In the list, click the little + and search for "Center Actor", add it to your track list.**
+
+>![Project Settings Popup](/EasyWaterscape_Docs_CenterActorWorkflow_04.png)
+
+>![Project Settings Popup](/EasyWaterscape_Docs_CenterActorWorkflow_03.png)
+
+>![Project Settings Popup](/EasyWaterscape_Docs_CenterActorWorkflow_05.png)
+
+3. **Now you can add the CineCameraActor spawned by your Sequence.**
+   
+>![Project Settings Popup](/EasyWaterscape_Docs_CenterActorWorkflow_06.png)
+
+4. Test it out! Change the Manual Focus Distance variable, you’ll see the mesh center move along with it.
+  <div class="img-row">
+    <figure>
+      <video src="/clip_4_smaller.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Changing the Manual Focus Distance in Sequencer moves the densest part of the mesh to the camera's
+  focus point.</figcaption>
+    </figure>
+  </div>
 
 ### Fixed
 
-Setting the Mesh Center to fixed means there is no position offsetting, and the mesh will only show up where the BP_EasyWaterscape actor is in the level. Makes it easy to place it wherever you like. Using Mesh Mode Custom uses Fixed automatically.
+Setting the Mesh Center to fixed means there is no position offsetting, and the mesh will only show up where the BP_EasyWaterscape actor is in the level. Makes it easy to place it wherever you like. Using Mesh Mode [Custom](#custom) uses Fixed automatically.
 
 ## Additional Mesh Settings
 
-### Mesh Scale:
+### Mesh Scale
 
 **Clipmap Only.** Scales the whole water mesh pattern. Change viewmode to Wireframe to see the effect. Lower values gives finer triangles near the center, but a smaller detail area and a shorter reach. Larger values extends the range. Detail far away doesn't change (use Mesh Density for that). 
 This has no impact on the size of the waves.
 
-### Mesh Outer Rings:
+### Mesh Outer Rings
 
 **Clipmap Only.** How far out the water mesh reaches. Change viewport mode to Wireframe to see the effect. Each extra ring amount doubles the distance it extends to, and adds the same number of
 triangles every time (more at higher Mesh Density).
