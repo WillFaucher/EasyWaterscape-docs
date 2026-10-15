@@ -68,12 +68,17 @@ By default, Evaluate in Ray Tracing is enabled. This gives the best possible sur
 With Evaluate in Raytracing turned OFF, the water surface does contribute to GI, but then you'll encounter some screenspace reflection issues along the edges of the frame as such (see above).
 This can be mitigated by increasing the [Lumen Fix Offset](<#lumen-fix-offset>) to, say, 50, which will solve the screenspace reflections edge issue, but, your horizon may also start showing some extra noise. (See Example below).
 
+The reason we went this direction is because we noticed the following, notice the fine darker artifacts near the horizon:
+
+[/EasyWaterscapeDocs_FineNoise2.png|/EasyWaterscapeDocs_FineNoise1.png|Without the fix| With the fix]
+
+>**Above:** Left: Evaluate in Ray Tracing disabled (contributes to Lumen scene, which is better, and lumen fix offset set to 50) E
+
 >**Recommendation:** leave Evaluate in Ray Tracing enabled, and place geometry below the water surface so that cliffs, and surrounding environments get correct GI/AO shadowing.
 
 If you are simply using screenspace reflections and not Lumen Reflections, then you need not worry about any of the above.
 
 See the [Common Issues](<../../Knowledgebase/Common Issues.md>) section for more information on dealing with artifacts and other known, easy-to-fix issues.
-
 
 ## Ocean Solver
 

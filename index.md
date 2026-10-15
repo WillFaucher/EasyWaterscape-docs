@@ -9,10 +9,8 @@ title: EasyWaterscape
 description: Realtime Ocean & Water System for Unreal Engine 5
 ---
 
-<!-- TODO: replace the placeholder boxes with your media, e.g.
-     <video class="section-bg hide-mobile" src="/Splash.mp4" autoplay muted loop />  (file goes in public/) -->
-
 <section class="section section-dark section-full section-top">
+    <video class="section-bg" src="/EasyWaterscape_Homepage_01_web.mp4" autoplay muted loop playsinline></video>
     <div class="landing">
         <img class="landing-logo" src="/LogoEasyWaterscape_01.png" alt="EasyWaterscape">
         <p class="landing-description">Realtime Ocean & Water System for Unreal Engine 5</p>
@@ -36,7 +34,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 <section class="section section-content">
     <div class="side-by-side">
         <div class="media-placeholder">Video: open ocean</div>
-        <p>Water simulation running on the GPU.</p>
+        <p>Water simulation running in Realtime in UE5.</p>
     </div>
     <div class="side-by-side side-reverse">
         <div class="media-placeholder">Video: coastline</div>
@@ -48,7 +46,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
     </div>
     <div class="side-by-side side-reverse">
         <div class="media-placeholder">Video: underwater</div>
-        <p>Underwater post-process and waterline.</p>
+        <p>Underwater post-process and water surface meniscus line.</p>
     </div>
 </section>
 
