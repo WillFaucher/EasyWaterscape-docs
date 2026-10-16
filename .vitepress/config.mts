@@ -95,7 +95,7 @@ export default defineConfig(
           "meta",
           {
             property: "og:image",
-            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_03.jpg",
+            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_04.jpg",
           },
         ],
         ["meta", { property: "og:image:width", content: "1920" }],
@@ -105,7 +105,7 @@ export default defineConfig(
           "meta",
           {
             name: "twitter:image",
-            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_03.jpg",
+            content: "https://easywaterscape.williamfaucher.com/easyWaterscape_thumbnail_04.jpg",
           },
         ],
         [
