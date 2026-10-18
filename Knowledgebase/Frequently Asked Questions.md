@@ -19,7 +19,10 @@ Not quite. EasyWaterscape is designed with both games and cinematics in mind, wi
 But it is not meant to be a package complete with gameplay mechanics to plug and play into a nautical game, for example. You will need to implement those features yourself. 
 EasyWaterscape is optimized, built cleanly, meaning the blueprint functions are all organised and clearly labeled and should be easy for your team to adapt it to your needs.
 
-
+## Does EasyWaterscape support boats, wakes, or dynamic player interaction with the water surface?
+Not *yet* but it is at the top of the development roadmap. It is something we want to implement sooner than later. Our focus has been first and foremost on 
+optimization/improving the performance and stability of EasyWaterscape before adding new features, but now that performance has been addressed in the
+October 2026 update, wakes are next on the list. Stay tuned!
 
 
 
