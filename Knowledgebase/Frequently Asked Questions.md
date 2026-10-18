@@ -22,7 +22,7 @@ EasyWaterscape is optimized, built cleanly, meaning the blueprint functions are 
 ## Does EasyWaterscape support boats, wakes, or dynamic player interaction with the water surface?
 Not *yet* but it is at the top of the development roadmap. It is something we want to implement sooner than later. Our focus has been first and foremost on 
 optimization/improving the performance and stability of EasyWaterscape before adding new features, but now that performance has been addressed in the
-October 2026 update, wakes are next on the list. Stay tuned!
+[October 2026 Update](<Change Log.md#2026-10-15>), wakes are next on the list. Stay tuned!
 
 
 
