@@ -7,7 +7,7 @@ order: 30
 EasyWaterscape is designed with both quality and performance in mind. Of course it depends on your target platform, check out the [Benchmarks Section](<Benchmarks.md>) to gauge the performance. 
 The benchmarks were run with Mid settings, meaning there is some leeway to optimize even more if you need to. EasyWaterscape offers many performance options, dials for you to control and fine tune the performance to quality ratio you need for your project.
 
-As of October 2026, EasyWaterscape just recieved a major performance update, making it more usable for games than ever, and you have the options at your disposal to really adjust for your target platform.
+As of October 2026, [As of October 2026](<Change Log.md>), EasyWaterscape just recieved a major performance update, making it more usable for games than ever, and you have the options at your disposal to really adjust for your target platform.
 
 ## Can EasyWaterscape do rivers?
 No. EasyWaterscape is primarily designed for bodies of water, such as Oceans/Seas, Lakes, Ponds, even pools. But rivers/streams involve fluid dynamics
