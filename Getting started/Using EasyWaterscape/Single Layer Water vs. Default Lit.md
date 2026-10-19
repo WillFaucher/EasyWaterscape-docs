@@ -10,7 +10,6 @@ order: 50
 > For information on how Single Layer Water works, [click here](https://dev.epicgames.com/documentation/unreal-engine/single-layer-water-shading-model-in-unreal-engine).
 
 But there are a few downsides too:
- But there are a few downsides too: 
 
 For starters, it does not self-shadow (meaning waves won't cast shadows onto themselves or break up specular reflections) and secondly, it only casts and receives shadows from the primary directional light. In shots lit by Spotlights or Pointlights, missing shadows can break the illusion as shown here:
 
