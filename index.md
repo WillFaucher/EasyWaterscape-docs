@@ -15,7 +15,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
         <img class="landing-logo" src="/LogoEasyWaterscape_01.png" alt="EasyWaterscape">
         <p class="landing-description">Realtime Ocean & Water System for Unreal Engine 5</p>
         <div class="buttons">
-            <a href="#" onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' })">Discover</a>
+            <a href="#" onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' })">Show me more</a>
             <a href="Getting started/">Documentation</a>
         </div>
     </div>
@@ -46,7 +46,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
     </div>
     <div class="side-by-side side-reverse">
         <video src="/EasyWaterscape_Homepage_Underwater.mp4" autoplay loop muted playsinline></video>
-        <p>BETA: Underwater post-process and water surface split</p>
+        <p>BETA: Underwater post-process and water surface split. (Lens distortion, and edge blur coming soon)</p>
     </div>
 </section>
 

@@ -14,3 +14,5 @@ order: 30
       <figcaption>New in the October 2026 update: split water meniscus! (Edge blur and distortion not included - yet. Coming soon!) </figcaption>
     </figure>
   </div>
+
+  **Current limitation of the water meniscus line:** Does not actively factor in the CoastMaker shoreline waves. To be clear: you *can* use CoastMaker, but just be aware that if you have coastline waves, the edge of the water won't line up with the meniscus line.
