@@ -6,6 +6,14 @@ order: 50
 
 **Single Layer Water** is the gold standard for water in Unreal Engine and looks fantastic, providing caustics support, refraction, scattering & absorption.
 
+You can adjust the Single Layer Water settings by going to the 01-EasyWater menu, under **"Surface PBR"**:
+<div class="img-row">
+  <figure>
+    <img src="/EasyWaterscape_Docs_SLWSettings.png" alt="Single Layer Water Settings">
+    <figcaption>You'll find the SLW settings in the details panel here</figcaption>
+  </figure>
+</div>
+
 > [!TIP] Explore the possibilities of SLW
 > For information on how Single Layer Water works, [click here](https://dev.epicgames.com/documentation/unreal-engine/single-layer-water-shading-model-in-unreal-engine).
 
