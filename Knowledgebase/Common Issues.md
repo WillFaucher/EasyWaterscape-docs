@@ -48,6 +48,11 @@ If you plan on sticking with the new defaults, you don't need to change this.
 
 [/EasyWaterscape_Docs_LumenFixOffset_01.png|/EasyWaterscape_Docs_LumenFixOffset_02.png|Lumen Fix Offset 0|Lumen Fix Offset 50]
 
+## Motion Blur
+EasyWaterscape correctly evaluates motion vectors for correct motion blur, but you may occasionally encounter some odd Motion Blur flickering. The reason for this is that EasyWaterscape has a framerate limiter for the water simulation. This is intentionally done to help with performance. It is capped to 30 by default. But if your game's framerate is higher (it likely will be), for example, 120fps, that means for every 4 runtime frames, EasyWaterscape only simulates one frame. THere are 3 frames out of 4 where the water isn't moving at all when you're at 120fps. Then, when the water does move, the motion blur correctly detects movement at the frame, thus, motion blur on that one frame, and it stops.
+
+This is a known "issue", and will be rectified in a future update. Considering the fact that most gamers disable motion blur, *and* Movie Render Queue/Graph does it's own motion blur thing, this is considered a lower priority fix. If this is a dealbreaker for you, please contact us on discord, and we'll sort something out.
+
 ## CoastMaker Woes (Artifacts, or not looking great)
 
 #### Issue 1
