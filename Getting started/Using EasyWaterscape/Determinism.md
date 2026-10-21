@@ -3,7 +3,7 @@ order: 90
 ---
 # Determinism for Offline Rendering
 
-> [!WARNING] This feature is in not yet published on FAB.
+> [!WARNING] This feature is not yet published on FAB.
 
 Studios using Unreal Engine for offline rendering with Movie Render Queue/Movie Render Graph often have the need for a fully deterministic approach. Meaning, if one renders frame 100-500, then later renders frames 500 to 1000, frame 500 needs to be a perfect match, the water needs to be identical. Users often need to be able to scrub through Sequencer and see the waves move and be at the exact same place frame by frame.
 This is why we've added the Deterministic toggle.
@@ -15,7 +15,7 @@ This is why we've added the Deterministic toggle.
   </figure>
 </div>
 
-This replaces the engine time with a predertermined, deterministic value that you set yourself
+This replaces the engine time with a predertermined, deterministic value that you set yourself.
 
 You will find both variables you need to work with in the 06-OfflineRendering section of EasyWaterscape:
 <div class="img-row">
@@ -40,11 +40,6 @@ Always use **Linear** keys (select the keys, right-click, Linear). Sequencer's d
 Set pre-infinity and post-infinity to Linear so the water keeps moving before the first key and after the last one.
 The Wave Speed setting still applies on top, as usual.
 
-Measures the simulation time in seconds, used when Deterministic is on. 
-In Sequencer, add EasyWaterscape to the sequence, then keyframe it on the EasyWaterscape actor with linear keys: 0 on the first frame and 10 at 10 s is normal speed, a steeper slope is faster. 
-Set post-infinity to Linear so it keeps going past the last key.
-
-
 > [!TIP] Workflow: For a 10 second shot (240 frames @24fps) at normal speed
 > 1. Have a Level Sequence open in your scene.
 > 2. Add EasyWaterscape into your Sequence (drag and drop).
@@ -66,6 +61,18 @@ Run EasyWater is only needed to see the waves move while scrubbing in the editor
 
 > [!NOTE] Multiple water bodies
 > Enable Deterministic and keyframe Wave Time on the body that has **Simulate Waves** ticked. The other bodies follow it automatically.
+
+## Movie Render Queue Tips
+Below are the recommended render settings for Movie Render Queue/Graph. 
+1. Ensure you tick "Render Warm Up Frames".
+2. Set Render and Engine Warm Up Count to a high number, consider 128+.
+   
+<div class="img-row">
+  <figure>
+    <img src="/EasyWaterscape_Docs_DeterministicRenderSettings.png" alt="Deterministic Render Settings in MRQ">
+    <figcaption>For best results, you really  need a lot of warmup frames and/or preroll.</figcaption>
+  </figure>
+</div>
 
 ## Caveats To Be Aware Of
 1. **Foam needs a few seconds of pre-roll.** Waves, shore waves, swells and ripples are exact on any frame, but Foam has "history": the long trailing foam builds up over a few seconds. Rendering the same frame range twice gives identical foam, but a render that starts in the middle of a shot starts with shorter trails.
