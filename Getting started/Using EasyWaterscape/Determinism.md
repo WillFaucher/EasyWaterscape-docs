@@ -33,9 +33,13 @@ Measures the simulation time in seconds, used when Deterministic is on.
 In Sequencer, add EasyWaterscape to the sequence, then keyframe it on the EasyWaterscape actor with linear keys: 0 on the first frame and 10 at 10 s is normal speed, a steeper slope is faster. 
 Set post-infinity to Linear so it keeps going past the last key.
 
-> [!TIP] Example: For a 10 second shot (240 frames @24fps) at normal speed
-> 1. keyframe WaveTime 0 at frame 0. 
-> 2. Keyframe WaveTime to 10 at frame 239
+> [!TIP] Workflow: For a 10 second shot (240 frames @24fps) at normal speed
+> 1. Have a Level Sequence open in your scene.
+> 2. Add EasyWaterscape into your Sequence (Drag and drop).
+> 3. Press "Run EasyWater"Scroll down the 06-Offline Rendering section, enable Deterministic. The waves will stop moving, this is normal.
+> 4. Keyframe WaveTime 0 at frame 0. 
+> 5. Keyframe WaveTime to 10 at frame 239
+> 6. Scrub through the timeline with the playhead and see the waves move.
 
 ## Caveats To Be Aware Of
 The **only** thing that is not 100% deterministic is the ocean foam. The reason for this is due to the fact that it has "history", this allows waves to have the long, trailing foam that remains for multiple seconds.
