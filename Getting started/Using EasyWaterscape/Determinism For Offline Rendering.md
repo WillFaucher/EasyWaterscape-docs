@@ -11,7 +11,7 @@ This is why we've added the Deterministic toggle.
 <div class="img-row">
   <figure>
     <video src="/EasyWaterscape_Docs_Determinism_01.mp4" autoplay loop muted playsinline></video>
-    <figcaption>Scrubbing Sequencer: the waves follow the keyed Wave Time, so the same frame always looks the same.</figcaption>
+    <figcaption>Scrubbing Sequencer: the waves follow the keyed Deterministic Time, so the same frame always looks the same.</figcaption>
   </figure>
 </div>
 
@@ -26,11 +26,11 @@ You will find both variables you need to work with in the 06-OfflineRendering se
 </div>
 
 ## Deterministic Checkbox
-Drives the ocean from Wave Time instead of the engine clock (Time nodes) so every frame renders the same. Keyframe "Wave Time" in Sequencer to make the water move.
+Drives the ocean from Deterministic Time instead of the engine clock (Time nodes) so every frame renders the same. Keyframe "Deterministic Time" in Sequencer to make the water move.
 
 When Deterministic is enabled, this automatically uncaps EasyWaterscape's "Water Framerate" variable. This means you don't need to worry about changing your water framerate to match your render framerate, it will always tick forward with every sample for best results (and more importantly, ensuring seamless transitions between render sessions).
 
-## Wave Time
+## Deterministic Time
 The water's time in seconds, used when Deterministic is on. Keyframe it in Sequencer: the slope of the keys sets the speed.
 - 0 at 0s and 10 at 10s = normal speed
 - 0 at 0s and 20 at 10s = double speed
@@ -44,8 +44,8 @@ The Wave Speed setting still applies on top, as usual.
 > 1. Have a Level Sequence open in your scene.
 > 2. Add EasyWaterscape into your Sequence (drag and drop).
 > 3. Press "Run EasyWater". Scroll down to the 06-Offline Rendering section and enable Deterministic. The waves will stop moving, this is normal.
-> 4. Keyframe Wave Time to 0 at frame 0.
-> 5. Keyframe Wave Time to 10 at frame 240 (10 seconds).
+> 4. Keyframe Deterministic Time to 0 at frame 0.
+> 5. Keyframe Deterministic Time to 10 at frame 240 (10 seconds).
 > 6. Select both keys, right-click, and choose Linear.
 > 7. Scrub through the timeline with the playhead and see the waves move.
 > 8. (Optional but Recommended) In Sequencer's Curve Editor Set Pre and Post Infinity to Linear as well for good measure, see image below.
@@ -57,10 +57,10 @@ The Wave Speed setting still applies on top, as usual.
   </figure>
 </div>
 
-Run EasyWater is only needed to see the waves move while scrubbing in the editor. Shore waves, swells and wind ripples follow Wave Time without it, and Movie Render Queue and Play don't need it.
+Run EasyWater is only needed to see the waves move while scrubbing in the editor. Shore waves, swells and wind ripples follow Deterministic Time without it, and Movie Render Queue and Play don't need it.
 
 > [!NOTE] Multiple water bodies
-> Enable Deterministic and keyframe Wave Time on the body that has **Simulate Waves** ticked. The other bodies follow it automatically.
+> Enable Deterministic and keyframe Deterministic Time on the body that has **Simulate Waves** ticked. The other bodies follow it automatically.
 
 ## Movie Render Queue Tips
 Below are the recommended render settings for Movie Render Queue/Graph. 
@@ -80,6 +80,6 @@ Below are the recommended render settings for Movie Render Queue/Graph.
    To match, give the render about 3 seconds of moving pre-roll: enable **Use Camera Cut for Warm Up** in Movie Render Queue and start your camera cut about 3 seconds before the first frame you render. **Engine Warm Up Count on its own is not enough**: it holds the sequence on the first frame, so the water doesn't move during the warm-up.
 2. **Scrubbing backwards resets the foam** to the wave crests. The trails rebuild within 2-3 seconds of moving forward again.
 3. **Buoyant objects are physics-driven.** After a jump on the timeline they need a moment to settle back onto the waves. GPU floaters and Shore Spray (BETA) are particle effects with history and are not deterministic.
-4. **No Wave Time keys = still water.** With Deterministic on, the water only moves when Wave Time changes.
+4. **No "Deterministic Time" keys = still water.** With Deterministic on, the water only moves when Deterministic Time changes.
 
 Since this is a new feature, please reach out on [Discord](https://discord.com/invite/PjY9wEq9wG) if you have any questions.
