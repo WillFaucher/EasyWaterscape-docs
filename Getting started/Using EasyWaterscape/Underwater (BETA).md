@@ -15,4 +15,8 @@ order: 30
     </figure>
   </div>
 
-  **Current limitation of the water meniscus line:** Does not actively factor in the CoastMaker shoreline waves. To be clear: you *can* use CoastMaker, but just be aware that if you have coastline waves, the edge of the water won't line up with the meniscus line.
+  
+  ## Known Limitations with the Water Meniscus
+  1. Does not actively factor in the CoastMaker shoreline waves. To be clear: you *can* use CoastMaker, but just be aware that if you have coastline waves, the edge of the water won't line up with the meniscus line.
+  2. If your mesh density is too low, the meniscus won't line up with the mesh correctly. You need enough triangles to get a close match.
+  3. Sometimes in very choppy waters with curling waves, the meniscus won't line up either. This is a known limitation.
