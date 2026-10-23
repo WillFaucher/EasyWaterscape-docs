@@ -3,6 +3,9 @@ order: 30
 ---
 # Frequently Asked Questions
 
+## When I change settings on EasyWaterscape, it has zero effect on the water? What's happening?
+Simple fix! You simply need to make sure that you click "Run EasyWater". If the water is not running, you won't see the changes being applied to your water. Totally normal!
+
 ## Is EasyWaterscape performant enough for games, or is it mostly for Cinematics?
 EasyWaterscape is designed with both quality and performance in mind. Of course it depends on your target platform, check out the [Benchmarks Section](<Benchmarks.md>) to gauge the performance. 
 The benchmarks were run with Mid settings, meaning there is some leeway to optimize even more if you need to. EasyWaterscape offers many performance options, dials for you to control and fine tune the performance to quality ratio you need for your project.
