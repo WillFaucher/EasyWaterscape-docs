@@ -1,4 +1,5 @@
 import DefaultTheme from "vitepress/theme";
+import LogoWater from "./LogoWater.vue";
 
 import "./custom.css";
 import "./imgsli.slider.css";
@@ -8,6 +9,7 @@ import "./imgsli.slider.css";
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router, siteData }) {
+    app.component("LogoWater", LogoWater);
     // This will only run on the client side
     if (typeof window !== "undefined") {
       import("./imgsli.slider.js");

@@ -12,7 +12,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
 <section class="section section-dark section-full section-top">
     <video class="section-bg" src="/EasyWaterscape_Homepage_01_web.mp4" autoplay muted loop playsinline></video>
     <div class="landing">
-        <img class="landing-logo" src="/LogoEasyWaterscape_01.png" alt="EasyWaterscape">
+<LogoWater />
         <p class="landing-description">Realtime Ocean & Water System for Unreal Engine 5</p>
         <div class="buttons">
             <a href="#" onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' })">Show me more</a>
