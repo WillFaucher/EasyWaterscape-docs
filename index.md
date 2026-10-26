@@ -17,6 +17,7 @@ description: Realtime Ocean & Water System for Unreal Engine 5
         <div class="buttons">
             <a href="#" onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' })">Show me more</a>
             <a href="Getting started/">Documentation</a>
+            <a href="/demo">Playable Demo</a>
         </div>
     </div>
 </section>
