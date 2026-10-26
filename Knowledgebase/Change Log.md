@@ -3,6 +3,17 @@ order: 60
 ---
 # Changelog / Patch Notes
 
+## 2026-10-26
+
+#### Deterministic Mode
+EasyWaterscape now has a [Deterministic Mode](</Getting started/Using EasyWaterscape/Determinism For Offline Rendering.md>). This is for users who need a fully deterministic setup for offline rendering and animation.
+
+#### New Playable Demo
+EasyWaterscape now has a [Free, playable demo](</demo.md>) users can try, in order to make an informed decision before purchasing. Includes a built-in benchmark to see what the water costs on your own PC.
+
+#### Other:
+Fixed an small issue with Coastline Foam that was not working as intended. 
+
 ## 2026-10-15
 
 #### Major Performance improvements

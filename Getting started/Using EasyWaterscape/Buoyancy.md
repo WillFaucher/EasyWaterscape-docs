@@ -25,8 +25,33 @@ Add the function to any material and connect it to the **World Position Offset**
 3. Adjust the number of spawned objects, radius, scale, and scale variation.
 
 This is the method you should use most of the time. It runs on the GPU, and is highly performant. If something isn't lining up or looks slightly floaty, nudge it and it will snap into place. 
+    
+#### Enable Drifting:
+Enables an additional drift effect where you can configure how far a buoyant mesh drifts away from its initial position. Great for simulating the effects of currents pushing objects away, slowly.
+
+#### Enable Swaying: [New as of 2026-10-26:](</Knowledgebase/Change Log.md#2026-10-26>)
+Buoyancy now has a "Enable Swaying" checkbox.
+
+**Enabled:** Ideal for debris and small floating objects that should following the swaying of the waves. (See Below)
+
+**Disabled**: floaters stay where they are placed and bob as the waves pass under them. Best for buoys and larger objects like boats. (See Below)
+
+<div class="img-row">
+  <figure>
+    <video src="/EasyWaterscape_Docs_BuoyancySwaying_On.mp4" autoplay loop muted playsinline></video>
+    <figcaption>Enable Swaying on: the floaters drift back and forth with the waves.</figcaption>
+  </figure>
+  <figure>
+    <video src="/EasyWaterscape_Docs_BuoyancySwaying_Off.mp4" autoplay loop muted playsinline></video>
+    <figcaption>Enable Swaying off: the floaters stay in place and bob as the waves pass.</figcaption>
+  </figure>
+</div>
 
 ### 3. Blueprint Component (BP_EasyWater_BuoyancyComponent)
+
+> [!Warning] Heads-up: Performance & Future Updates
+> This BP Component is the most performance intensive of the three, and we are not 100% satisfied with it's current state. This is going to be one of the first thing we revamp/improve in the near future, including support for driveable boats.
+> 
 
 Can be added to almost anything: static meshes, cameras, and more. It behaves like the Niagara Blueprint, with the same controls.
 
@@ -47,6 +72,7 @@ Both the Buoyancy Component and the Niagara Blueprint have the same control sett
 | **Sample Distance** | Samples and averages points for surface normal calculation. Larger = Averages the surface area for smoother tilt. Too high a value might skip waves. Smaller surface area = more detailed/snappier  rotation. |
 | Height Multiplier | Amplify or reduce the intensity of the bobbing height feedback. Indirectly affects rotation intensity. |
 | Rotation Multiplier | Amplify or reduce the intensity of the bobbing rotation feedback. |
+| Swaying | Adds a swaying effect, useful for debris and small floating objects that should following the swaying of the waves. |
 | Drifting | Adds a subtle horizontal bobbing effect to simulate gentle wave drifting. |
 
 
