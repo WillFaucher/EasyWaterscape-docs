@@ -2,6 +2,8 @@
 order: 30
 ---
 
+> [!WARNING] This page is currently incomplete. Refer to the tutorial for more info!
+
 # CoastMaker
 CoastMaker automatically generates shoreline waves and foam around land that is found within the “Coverage Size” volume (The big volume box that surrounds the island shown below)
 <br>Image of CoastMaker Volume Box
